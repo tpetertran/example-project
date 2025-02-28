@@ -7,6 +7,7 @@ This example project implements an Android app that searches OMDB for movies.
 * MutableStateFlow debounces so that API isn't called when user isn't finished typing
 * In cases of many results, paginates when user scrolls to the bottom
 * "View" button creates a Toast message of the movie title
+* Basic Intrumented Testing
 
 ## App Structure
 ### UI

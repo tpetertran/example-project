@@ -31,14 +31,13 @@ android {
             isMinifyEnabled = false
             buildConfigField("String", "API_ADDRESS", "\"https://www.omdbapi.com\"")
             buildConfigField("String", "API_KEY", "\"91883a38\"")
-//            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
             isDebuggable = true
         }
         create("dev") {
             isMinifyEnabled = false
             buildConfigField("String", "API_ADDRESS", "\"https://www.omdbapi.com\"")
             buildConfigField("String", "API_KEY", "\"91883a38\"")
-//            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
             isDebuggable = true
             signingConfig = signingConfigs.getByName("debug")
         }
